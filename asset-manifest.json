@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Landing-Page-React/static/css/main.e33beacf.css",
+    "main.js": "/Landing-Page-React/static/js/main.585da305.js",
+    "static/media/Ratatouille.jpg": "/Landing-Page-React/static/media/Ratatouille.c34e7d6108cf54d162e8.jpg",
+    "index.html": "/Landing-Page-React/index.html",
+    "main.e33beacf.css.map": "/Landing-Page-React/static/css/main.e33beacf.css.map",
+    "main.585da305.js.map": "/Landing-Page-React/static/js/main.585da305.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e33beacf.css",
+    "static/js/main.585da305.js"
+  ]
+}
