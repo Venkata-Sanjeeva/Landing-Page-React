@@ -1,0 +1,192 @@
+body {
+    overflow: hidden;
+    background-color: #DC6B19;
+}
+nav div {
+    margin-left: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    animation-name: menu-animation;
+    animation-duration: 1s;
+}
+
+nav div p {
+    margin-left: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.3rem;
+    line-height: 2rem;
+}
+nav div ul {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav div ul li a {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 7px;
+    background-color: #000000;
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+nav div ul li a:hover {
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    cursor: pointer;
+}
+nav div ul li a:active {
+    border: #000000;
+    transform: translateY(4px);
+}
+.section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.content {
+    margin-left: 2rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    width: 100%;
+    animation-name: content-animation;
+    animation-duration: 1s;
+}
+@keyframes content-animation {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+.content b {
+    font-size: 1.5rem;
+}
+.content p {
+    font-size: 1.2rem;
+}
+
+.receipe img{
+    margin-top: 1rem;
+    border-radius: 4rem;
+    margin-left: 14rem;
+    width: 60%;
+    animation-name: image-animation;
+    animation-duration: 1s;
+}
+@keyframes image-animation {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+.receipe img:hover{
+    box-shadow: 20px 15px 80px 2px;
+    scale: 1.05;
+    transition: 2s ease;
+    /*border: 2px solid #90d626;
+    border-radius: 4rem;*/
+}
+
+
+@media screen and (max-width: 768px){
+    body {
+        overflow-x: scroll; /* Allow horizontal scrolling for smaller screens */
+        overflow-y: scroll;
+        background-color: #DC6B19;
+        margin: 0; /* Remove default body margin */
+    }
+    
+    nav div {
+        margin-left: 1rem; /* Adjust margin for smaller screens */
+        padding: 1rem; /* Add padding for better spacing */
+        color: white;
+        display: flex;
+        flex-direction: column; /* Change flex direction for smaller screens */
+        align-items: center; /* Center align items vertically */
+        animation-name: menu-animation;
+        animation-duration: 1s;
+    }
+    
+    nav div p {
+        margin: 0; /* Remove margin to avoid excessive space */
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        line-height: 2.5rem; /* Adjust line height for better spacing */
+        text-align: center; /* Center align text */
+    }
+    
+    nav div ul {
+        margin-top: 1rem; /* Adjust margin for better spacing */
+        margin-bottom: 0; /* Remove margin bottom to avoid excessive space */
+        line-height: 2rem;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of menu items */
+        justify-content: center; /* Center align menu items */
+        list-style-type: none;
+    }
+    
+    nav div ul li a {
+        display: block; /* Change to block display for better stacking on smaller screens */
+        padding: 0.5rem;
+        border-radius: 7px;
+        background-color: #000000;
+        font-size: 1.2rem;
+        color: white;
+        margin: 0.5rem; /* Adjust margin for better spacing */
+        text-align: center; /* Center align text */
+        text-decoration: none;
+    }
+    
+    .content {
+        margin: 1rem; /* Adjust margin for better spacing */
+        padding: 1rem;
+        animation-name: content-animation;
+        animation-duration: 1s;
+    }
+    
+    .receipe img{
+        margin-top: 1rem;
+        border-radius: 4rem;
+        width: 100%; /* Make image width 100% for smaller screens */
+        animation-name: image-animation;
+        animation-duration: 1s;
+    }
+    
+    @keyframes content-animation {
+        0% {
+            opacity: 0; /* Start with opacity 0 for animation */
+            transform: translateY(-50px); /* Start with slight upward translation */
+        }
+        100% {
+            opacity: 1; /* End with opacity 1 */
+            transform: translateY(0); /* End with no translation */
+        }
+    }
+    
+    @keyframes image-animation {
+        0% {
+            opacity: 0; /* Start with opacity 0 for animation */
+            transform: translateY(50px); /* Start with slight downward translation */
+        }
+        100% {
+            opacity: 1; /* End with opacity 1 */
+            transform: translateY(0); /* End with no translation */
+        }
+    }
+    
+}
